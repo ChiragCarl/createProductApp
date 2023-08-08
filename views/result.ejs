@@ -1,0 +1,33 @@
+<!-- views/result.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSV Upload Result</title>
+</head>
+<body>
+  <h1>CSV Upload Result</h1>
+  <% if (data.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <% for (const key in data[0]) { %>
+            <th><%= key %></th>
+          <% } %>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.forEach((row) => { %>
+          <tr>
+            <% for (const key in row) { %>
+              <td><%= row[key] %></td>
+            <% } %>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <p>No data available.</p>
+  <% } %>
+  <a href="/">Upload another CSV</a>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout 1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- <main>
+        <h1>Welcome to the Appwrk platform </h1>
+    </main>
+    -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h2>Welcome to create Product  App developed By Appwrk</h2>
+                </header>
+            </div>
+            <div class="col-md-12">
+                <h3>Product create App </h3>
+                <form action="/submit" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label>Enter Product Name</label>
+                        <input type="text" class="form-control" name="name" id="name"  placeholder="enter product name"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Enter Product Price</label>
+                        <input type="number" class="form-control" name="price" id="price" placeholder="enter product Price"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Enter Product Type</label>
+                        <input type="text" class="form-control" name="type" id="type" placeholder="enter product Type"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Enter Product Tags</label>
+                        <input type="text" class="form-control" name="tags" id="tags" placeholder="enter product Tags"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Product Status</label>
+                     <!--    <input type="text" class="form-control" name="status" id="status" placeholder="enter product Status"/>-->
+                        <select name="status" id="status" class="form-control">
+                            <option value="active"> Active</option>
+                            <option value="draft"> Draft</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter Product Description</label><br/>
+                       <input type="text" class="form-control" name="Description"  id="Description" />
+                    </div>
+                    <div class="form-group">
+                        <label>Select Image </label><br/>
+                       <input type="file" class="form-control" name="img"  id="img" />
+                       <input type="hidden" class="form-control" name="imgHidden"  id="imgHidden" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="btn btn-sm btn-primary" value="create Product"/>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <footer>
+                    <p>Copyright by Appwrk IT solution Pvt. Ltd</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+  
+</body>
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"
+></script>
+</html>
